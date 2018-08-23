@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Your Nominal Here"
+        android:width="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/Output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR CURRENCY"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/inr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toINR"
+                    android:text="RM to INR" />
+
+                <Button
+                    android:id="@+id/usd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toUSD"
+                    android:text="RM to USD" />
+
+                <Button
+                    android:id="@+id/aud"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toAUD"
+                    android:text="RM to AUD" />
+
+                <Button
+                    android:id="@+id/cny"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toCNY"
+                    android:text="RM to CNY" />
+
+                <Button
+                    android:id="@+id/idr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toIDR"
+                    android:text="RM to IDR" />
+
+                <Button
+                    android:id="@+id/sgd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="toSGD"
+                    android:text="RM to SGD" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <Button
+                    android:id="@+id/inr2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="INR to rm"
+                    android:onClick="toINR2"/>
+
+                <Button
+                    android:id="@+id/usd2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="USD to rm"
+                    android:onClick="toUSD2"/>
+
+                <Button
+                    android:id="@+id/aud2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="AUD to rm"
+                    android:onClick="toAUD2"/>
+
+                <Button
+                    android:id="@+id/cny2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="CNY to rm"
+                    android:onClick="toCNY2"/>
+
+                <Button
+                    android:id="@+id/idr2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="IDR to rm"
+                    android:onClick="toIDR2"/>
+
+                <Button
+                    android:id="@+id/sgd2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="SGD to rm"
+                    android:onClick="toSGD2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
